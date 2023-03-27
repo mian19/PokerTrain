@@ -15,10 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let navController = UINavigationController()
-        coordinator = AppCoordinator(navigationController: navController)
-        coordinator?.start()
-        window?.rootViewController = navController
+        
+        
+        switch UserDefaultsManager.shared.checkResult(.onboarding) {
+        case true:
+         let vc = MenuTabBarController()
+            window?.rootViewController = vc
+        case false:
+       
+            let navController = UINavigationController()
+            coordinator = AppCoordinator(navigationController: navController)
+            coordinator?.start()
+            window?.rootViewController = navController
+        }
+        
+        
         window?.makeKeyAndVisible()
         return true
     }
