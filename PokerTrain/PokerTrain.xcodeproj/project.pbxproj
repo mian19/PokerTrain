@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E941807B8D02C752FE466D8 /* Pods_PokerTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7560330E8E0DB3B7A8ECEDA3 /* Pods_PokerTrain.framework */; };
+		6749EC0329D38B6A00D2E571 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6749EC0229D38B6A00D2E571 /* ReaderViewController.swift */; };
 		6777899129D095E1009E7F23 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777899029D095E1009E7F23 /* LearnViewController.swift */; };
 		6777899329D095FA009E7F23 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777899229D095FA009E7F23 /* TimerViewController.swift */; };
 		6777899529D09633009E7F23 /* ChanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777899429D09633009E7F23 /* ChanceViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6749EC0229D38B6A00D2E571 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
 		6777899029D095E1009E7F23 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		6777899229D095FA009E7F23 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		6777899429D09633009E7F23 /* ChanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				6777899229D095FA009E7F23 /* TimerViewController.swift */,
 				6777899429D09633009E7F23 /* ChanceViewController.swift */,
 				6777899629D09647009E7F23 /* SettingsViewController.swift */,
+				6749EC0229D38B6A00D2E571 /* ReaderViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				67E8945629CEDC870075F9EC /* UIColor+ColorNames.swift in Sources */,
 				67E8943929CED67B0075F9EC /* AppCoordinator.swift in Sources */,
+				6749EC0329D38B6A00D2E571 /* ReaderViewController.swift in Sources */,
 				67E8944A29CED6FE0075F9EC /* Dynamic.swift in Sources */,
 				67E8943F29CED6A60075F9EC /* UserDefaultsManager.swift in Sources */,
 				67E8944229CED6C90075F9EC /* Onboarding.swift in Sources */,

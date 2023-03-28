@@ -32,6 +32,7 @@ class LearnViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.mainBackground
         setViews()
+        setActions()
     }
     
     private func setViews() {
@@ -90,6 +91,14 @@ class LearnViewController: UIViewController {
             make.height.equalTo(68)
             make.top.equalTo(bankrollButton.snp.bottom).offset(16)
         }
+    }
+    
+    private func setActions() {
+        blefButton.addTarget(self, action: #selector(onBlefButton), for: .touchUpInside)
+    }
+    
+    @objc func onBlefButton() {
+        coordinator?.toReader(topic: .blef)
     }
 
 }
