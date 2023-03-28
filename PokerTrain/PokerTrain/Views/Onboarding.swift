@@ -28,7 +28,7 @@ class Onboarding: UIPageViewController {
     
     var label: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.buttonText
+        label.textColor = UIColor.mainText
         label.translatesAutoresizingMaskIntoConstraints = false
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 2

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E941807B8D02C752FE466D8 /* Pods_PokerTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7560330E8E0DB3B7A8ECEDA3 /* Pods_PokerTrain.framework */; };
 		6777899129D095E1009E7F23 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777899029D095E1009E7F23 /* LearnViewController.swift */; };
 		6777899329D095FA009E7F23 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777899229D095FA009E7F23 /* TimerViewController.swift */; };
 		6777899529D09633009E7F23 /* ChanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777899429D09633009E7F23 /* ChanceViewController.swift */; };
 		6777899729D09647009E7F23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777899629D09647009E7F23 /* SettingsViewController.swift */; };
 		677B118E29D0E1FE00BBFE28 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 677B118D29D0E1FE00BBFE28 /* Raleway-Medium.ttf */; };
 		677B119029D0E5D800BBFE28 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 677B118F29D0E5D800BBFE28 /* Raleway-Bold.ttf */; };
+		67988C5129D23EC70047837B /* UIImage+scaleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67988C5029D23EC70047837B /* UIImage+scaleImage.swift */; };
 		67E8942229CED5CF0075F9EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8942129CED5CF0075F9EC /* AppDelegate.swift */; };
 		67E8942B29CED5D30075F9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E8942A29CED5D30075F9EC /* Assets.xcassets */; };
 		67E8942E29CED5D30075F9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E8942C29CED5D30075F9EC /* LaunchScreen.storyboard */; };
@@ -41,6 +43,7 @@
 		6777899629D09647009E7F23 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		677B118D29D0E1FE00BBFE28 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		677B118F29D0E5D800BBFE28 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		67988C5029D23EC70047837B /* UIImage+scaleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+scaleImage.swift"; sourceTree = "<group>"; };
 		67E8941E29CED5CF0075F9EC /* PokerTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E8942129CED5CF0075F9EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E8942A29CED5D30075F9EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +65,9 @@
 		67E8945829CF8ED80075F9EC /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		67E8945A29CF8EDF0075F9EC /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		67E8945C29CF98D40075F9EC /* MenuTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
+		7560330E8E0DB3B7A8ECEDA3 /* Pods_PokerTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FB4F06CB04AB01FD90609F /* Pods-PokerTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTrain.debug.xcconfig"; path = "Target Support Files/Pods-PokerTrain/Pods-PokerTrain.debug.xcconfig"; sourceTree = "<group>"; };
+		EC8376B9C85BC5BEC0C20345 /* Pods-PokerTrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTrain.release.xcconfig"; path = "Target Support Files/Pods-PokerTrain/Pods-PokerTrain.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E941807B8D02C752FE466D8 /* Pods_PokerTrain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,8 @@
 			children = (
 				67E8942029CED5CF0075F9EC /* PokerTrain */,
 				67E8941F29CED5CF0075F9EC /* Products */,
+				BFD2A3DCFB744C32879CDC2A /* Pods */,
+				B70A9C7A63AF8FAA31C25FBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,8 +173,8 @@
 			children = (
 				67E8944129CED6C90075F9EC /* Onboarding.swift */,
 				67E8945C29CF98D40075F9EC /* MenuTabBarController.swift */,
-				67E8944329CED6F20075F9EC /* MainViewController.swift */,
 				6777899029D095E1009E7F23 /* LearnViewController.swift */,
+				67E8944329CED6F20075F9EC /* MainViewController.swift */,
 				6777899229D095FA009E7F23 /* TimerViewController.swift */,
 				6777899429D09633009E7F23 /* ChanceViewController.swift */,
 				6777899629D09647009E7F23 /* SettingsViewController.swift */,
@@ -176,6 +185,7 @@
 		67E8944C29CED7380075F9EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				67988C5029D23EC70047837B /* UIImage+scaleImage.swift */,
 				67E8944D29CED7380075F9EC /* UIColor+hex.swift */,
 				67E8944E29CED7380075F9EC /* UIButton+CustomButton.swift */,
 				67E8944F29CED7380075F9EC /* UIViewController+Actions.swift */,
@@ -196,6 +206,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B70A9C7A63AF8FAA31C25FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7560330E8E0DB3B7A8ECEDA3 /* Pods_PokerTrain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFD2A3DCFB744C32879CDC2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9FB4F06CB04AB01FD90609F /* Pods-PokerTrain.debug.xcconfig */,
+				EC8376B9C85BC5BEC0C20345 /* Pods-PokerTrain.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67E8943229CED5D30075F9EC /* Build configuration list for PBXNativeTarget "PokerTrain" */;
 			buildPhases = (
+				139B324D30DB5249F45514ED /* [CP] Check Pods Manifest.lock */,
 				67E8941A29CED5CF0075F9EC /* Sources */,
 				67E8941B29CED5CF0075F9EC /* Frameworks */,
 				67E8941C29CED5CF0075F9EC /* Resources */,
+				025EC72E1DA760E4B35DD8AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +294,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		025EC72E1DA760E4B35DD8AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokerTrain/Pods-PokerTrain-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokerTrain/Pods-PokerTrain-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokerTrain/Pods-PokerTrain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		139B324D30DB5249F45514ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokerTrain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67E8941A29CED5CF0075F9EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +347,7 @@
 				67E8943F29CED6A60075F9EC /* UserDefaultsManager.swift in Sources */,
 				67E8944229CED6C90075F9EC /* Onboarding.swift in Sources */,
 				6777899729D09647009E7F23 /* SettingsViewController.swift in Sources */,
+				67988C5129D23EC70047837B /* UIImage+scaleImage.swift in Sources */,
 				6777899129D095E1009E7F23 /* LearnViewController.swift in Sources */,
 				67E8943A29CED67B0075F9EC /* CoordinatorProtocol.swift in Sources */,
 				67E8944029CED6A60075F9EC /* NetworkService.swift in Sources */,
@@ -422,6 +494,7 @@
 		};
 		67E8943329CED5D30075F9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FB4F06CB04AB01FD90609F /* Pods-PokerTrain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,6 +522,7 @@
 		};
 		67E8943429CED5D30075F9EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8376B9C85BC5BEC0C20345 /* Pods-PokerTrain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

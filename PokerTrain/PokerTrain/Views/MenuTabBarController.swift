@@ -23,37 +23,47 @@ class MenuTabBarController: UITabBarController {
         UITabBar.appearance().unselectedItemTintColor = UIColor.init(rgb: 0xffffff, a: 0.4)
         UITabBar.appearance().tintColor = UIColor.init(rgb: 0xffffff)
         UITabBar.appearance().backgroundColor = UIColor.tabBar
+        self.tabBar.backgroundColor = UIColor.tabBar
+        if #available(iOS 15.0, *) {
+            let tabBarAppearance = UITabBarAppearance()
+              tabBarAppearance.backgroundColor = .red // set your desired color here
+
+             self.tabBar.standardAppearance = tabBarAppearance
+            
+        } else {
+            self.tabBar.barTintColor =  UIColor.init(rgb: 0x1b1932, a: 0.5)
+        }
         let appearance = UITabBarItem.appearance()
         let attributes = [NSAttributedString.Key.font:UIFont(name: "Raleway-Bold", size: 10)]
         appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
         viewControllers = [nav, nav1, nav2, nav3]
-
         let bgView = UIImageView(image: UIImage(named: "TabBar"))
         bgView.frame = CGRect(x: 0, y: 0, width: tabBar.bounds.width, height: tabBar.bounds.height + 10)
-        bgView.backgroundColor = .clear
+        bgView.backgroundColor = UIColor.mainBackground
         self.tabBar.addSubview(bgView)
         self.tabBar.sendSubviewToBack(bgView)
         ChangeRadiusOfTabbar()
-        
     }
     
     func ChangeRadiusOfTabbar(){
   
       self.tabBar.layer.cornerRadius = 23
       self.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-
+        tabBar.layer.backgroundColor = UIColor.clear.cgColor
         tabBar.layer.shadowColor = UIColor.black.cgColor
-        tabBar.layer.shadowOffset = CGSize(width: 0, height: -25.0)
+       
+        tabBar.layer.shadowPath = UIBezierPath(rect: CGRect(x: 0, y: -5, width: tabBar.bounds.width, height: -25)).cgPath
         tabBar.layer.shadowRadius = 23
-        tabBar.layer.shadowOpacity = 0.6
+        tabBar.layer.shadowOpacity = 0.5
+        tabBar.isTranslucent = false
         tabBar.layer.masksToBounds = false
- 
+        
      }
     
     private func generateMainNavController(imageName: String) -> UINavigationController {
         
         let navController = UINavigationController()
-//        navController.navigationBar.isHidden = true
+        navController.navigationBar.isHidden = true
         switch imageName {
         case "Spade":
             coordinator1 = AppCoordinator(navigationController: navController)
