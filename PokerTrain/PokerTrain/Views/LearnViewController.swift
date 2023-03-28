@@ -23,7 +23,7 @@ class LearnViewController: UIViewController {
 
     var mainButton = UIButton.learnButton(imageName: "mainIco", title: "Основы")
     var collectionButton = UIButton.learnButton(imageName: "collection", title: "Комбинации\nкарт", numberLines: 2)
-    var tacticButton = UIButton.learnButton(imageName: "tactic", title: "Тактика")
+    var tacticButton = UIButton.learnButton(imageName: "tactic", title: "Тактики")
     var blefButton = UIButton.learnButton(imageName: "blef", title: "Блеф")
     var bankrollButton = UIButton.learnButton(imageName: "mainIco", title: "Банкрол", big: true)
     var examButton = UIButton.learnButton(imageName: "exam", title: "Экзамен" , big: true)
@@ -95,10 +95,25 @@ class LearnViewController: UIViewController {
     
     private func setActions() {
         blefButton.addTarget(self, action: #selector(onBlefButton), for: .touchUpInside)
+        tacticButton.addTarget(self, action: #selector(onTacticButton), for: .touchUpInside)
+        mainButton.addTarget(self, action: #selector(onMainButton), for: .touchUpInside)
+        bankrollButton.addTarget(self, action: #selector(onBankrolButton), for: .touchUpInside)
     }
     
     @objc func onBlefButton() {
         coordinator?.toReader(topic: .blef)
+    }
+    
+    @objc func onTacticButton() {
+        coordinator?.toReader(topic: .tactic)
+    }
+    
+    @objc func onMainButton() {
+        coordinator?.toReader(topic: .main)
+    }
+    
+    @objc func onBankrolButton() {
+        coordinator?.toReader(topic: .bankrol)
     }
 
 }
