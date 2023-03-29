@@ -98,6 +98,8 @@ class LearnViewController: UIViewController {
         tacticButton.addTarget(self, action: #selector(onTacticButton), for: .touchUpInside)
         mainButton.addTarget(self, action: #selector(onMainButton), for: .touchUpInside)
         bankrollButton.addTarget(self, action: #selector(onBankrolButton), for: .touchUpInside)
+        collectionButton.addTarget(self, action: #selector(onCollectionButton), for: .touchUpInside)
+        examButton.addTarget(self, action: #selector(onExamButton), for: .touchUpInside)
     }
     
     @objc func onBlefButton() {
@@ -115,5 +117,12 @@ class LearnViewController: UIViewController {
     @objc func onBankrolButton() {
         coordinator?.toReader(topic: .bankrol)
     }
-
+    
+    @objc func onCollectionButton() {
+        coordinator?.toQuiz(type: .combinations)
+    }
+    
+    @objc func onExamButton() {
+        coordinator?.toQuiz(type: .exam)
+    }
 }

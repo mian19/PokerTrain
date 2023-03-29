@@ -67,4 +67,23 @@ extension UIButton {
       
         return button
     }
+    
+    static func quizButton( title: String) -> UIButton {
+        let button = UIButton(type: .custom)
+        button.frame = CGRect(x: 0, y: 0, width: 336, height: 44)
+        button.layer.cornerRadius = 16
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 0)
+        button.layer.shadowRadius = 10
+        button.layer.shadowOpacity = 0.5
+        button.layer.masksToBounds = false
+        button.layer.shadowPath = UIBezierPath(roundedRect: button.bounds, cornerRadius: button.layer.cornerRadius).cgPath
+        button.setBackgroundImage(UIImage(named: "quiz"), for: .normal)
+        button.backgroundColor = .clear
+        
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Raleway-SemiBold", size: 15)
+        button.setTitleColor(UIColor.white, for: .normal)
+        return  button
+    }
 }

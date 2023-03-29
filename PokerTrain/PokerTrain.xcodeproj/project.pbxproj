@@ -17,6 +17,8 @@
 		677B118E29D0E1FE00BBFE28 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 677B118D29D0E1FE00BBFE28 /* Raleway-Medium.ttf */; };
 		677B119029D0E5D800BBFE28 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 677B118F29D0E5D800BBFE28 /* Raleway-Bold.ttf */; };
 		67988C5129D23EC70047837B /* UIImage+scaleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67988C5029D23EC70047837B /* UIImage+scaleImage.swift */; };
+		67E2BDD829D4DE000095CCA3 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2BDD729D4DE000095CCA3 /* QuizViewController.swift */; };
+		67E2BDDB29D4E2650095CCA3 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2BDDA29D4E2650095CCA3 /* Quiz.swift */; };
 		67E8942229CED5CF0075F9EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8942129CED5CF0075F9EC /* AppDelegate.swift */; };
 		67E8942B29CED5D30075F9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E8942A29CED5D30075F9EC /* Assets.xcassets */; };
 		67E8942E29CED5D30075F9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E8942C29CED5D30075F9EC /* LaunchScreen.storyboard */; };
@@ -25,9 +27,6 @@
 		67E8943F29CED6A60075F9EC /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8943D29CED6A60075F9EC /* UserDefaultsManager.swift */; };
 		67E8944029CED6A60075F9EC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8943E29CED6A60075F9EC /* NetworkService.swift */; };
 		67E8944229CED6C90075F9EC /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8944129CED6C90075F9EC /* Onboarding.swift */; };
-		67E8944429CED6F20075F9EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8944329CED6F20075F9EC /* MainViewController.swift */; };
-		67E8944929CED6FE0075F9EC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8944629CED6FE0075F9EC /* MainViewModel.swift */; };
-		67E8944A29CED6FE0075F9EC /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8944829CED6FE0075F9EC /* Dynamic.swift */; };
 		67E8945129CED7380075F9EC /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8944D29CED7380075F9EC /* UIColor+hex.swift */; };
 		67E8945229CED7380075F9EC /* UIButton+CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8944E29CED7380075F9EC /* UIButton+CustomButton.swift */; };
 		67E8945329CED7380075F9EC /* UIViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8944F29CED7380075F9EC /* UIViewController+Actions.swift */; };
@@ -48,6 +47,8 @@
 		677B118D29D0E1FE00BBFE28 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		677B118F29D0E5D800BBFE28 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		67988C5029D23EC70047837B /* UIImage+scaleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+scaleImage.swift"; sourceTree = "<group>"; };
+		67E2BDD729D4DE000095CCA3 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		67E2BDDA29D4E2650095CCA3 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		67E8941E29CED5CF0075F9EC /* PokerTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E8942129CED5CF0075F9EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E8942A29CED5D30075F9EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,9 +59,6 @@
 		67E8943D29CED6A60075F9EC /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		67E8943E29CED6A60075F9EC /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		67E8944129CED6C90075F9EC /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
-		67E8944329CED6F20075F9EC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		67E8944629CED6FE0075F9EC /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		67E8944829CED6FE0075F9EC /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		67E8944D29CED7380075F9EC /* UIColor+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		67E8944E29CED7380075F9EC /* UIButton+CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+CustomButton.swift"; sourceTree = "<group>"; };
 		67E8944F29CED7380075F9EC /* UIViewController+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Actions.swift"; sourceTree = "<group>"; };
@@ -86,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67E2BDD929D4E2560095CCA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67E2BDDA29D4E2650095CCA3 /* Quiz.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		67E8941529CED5CF0075F9EC = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +113,11 @@
 		67E8942029CED5CF0075F9EC /* PokerTrain */ = {
 			isa = PBXGroup;
 			children = (
+				67E2BDD929D4E2560095CCA3 /* Model */,
 				67E8943B29CED6830075F9EC /* App */,
 				67E8945729CF8E8D0075F9EC /* Fonts */,
 				67E8943529CED67B0075F9EC /* Coordinator */,
 				67E8943C29CED6A60075F9EC /* Services */,
-				67E8944529CED6FE0075F9EC /* ViewModels */,
 				67E8944B29CED71C0075F9EC /* Views */,
 				67E8944C29CED7380075F9EC /* Extensions */,
 				67E8942A29CED5D30075F9EC /* Assets.xcassets */,
@@ -155,23 +161,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		67E8944529CED6FE0075F9EC /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				67E8944629CED6FE0075F9EC /* MainViewModel.swift */,
-				67E8944729CED6FE0075F9EC /* Bindings */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		67E8944729CED6FE0075F9EC /* Bindings */ = {
-			isa = PBXGroup;
-			children = (
-				67E8944829CED6FE0075F9EC /* Dynamic.swift */,
-			);
-			path = Bindings;
-			sourceTree = "<group>";
-		};
 		67E8944B29CED71C0075F9EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,11 +168,11 @@
 				67E8944129CED6C90075F9EC /* Onboarding.swift */,
 				67E8945C29CF98D40075F9EC /* MenuTabBarController.swift */,
 				6777899029D095E1009E7F23 /* LearnViewController.swift */,
-				67E8944329CED6F20075F9EC /* MainViewController.swift */,
 				6777899229D095FA009E7F23 /* TimerViewController.swift */,
 				6777899429D09633009E7F23 /* ChanceViewController.swift */,
 				6777899629D09647009E7F23 /* SettingsViewController.swift */,
 				6749EC0229D38B6A00D2E571 /* ReaderViewController.swift */,
+				67E2BDD729D4DE000095CCA3 /* QuizViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,8 +338,8 @@
 			files = (
 				67E8945629CEDC870075F9EC /* UIColor+ColorNames.swift in Sources */,
 				67E8943929CED67B0075F9EC /* AppCoordinator.swift in Sources */,
+				67E2BDDB29D4E2650095CCA3 /* Quiz.swift in Sources */,
 				6749EC0329D38B6A00D2E571 /* ReaderViewController.swift in Sources */,
-				67E8944A29CED6FE0075F9EC /* Dynamic.swift in Sources */,
 				6749EC0529D3AC2500D2E571 /* WebViewController.swift in Sources */,
 				67E8943F29CED6A60075F9EC /* UserDefaultsManager.swift in Sources */,
 				67E8944229CED6C90075F9EC /* Onboarding.swift in Sources */,
@@ -365,10 +354,9 @@
 				67E8945129CED7380075F9EC /* UIColor+hex.swift in Sources */,
 				6777899329D095FA009E7F23 /* TimerViewController.swift in Sources */,
 				67E8945D29CF98D40075F9EC /* MenuTabBarController.swift in Sources */,
-				67E8944429CED6F20075F9EC /* MainViewController.swift in Sources */,
 				67E8945429CED7380075F9EC /* Double+adjustSize.swift in Sources */,
+				67E2BDD829D4DE000095CCA3 /* QuizViewController.swift in Sources */,
 				6777899529D09633009E7F23 /* ChanceViewController.swift in Sources */,
-				67E8944929CED6FE0075F9EC /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

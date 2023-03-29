@@ -57,6 +57,13 @@ class AppCoordinator: CoordinatorProtocol {
          navigationController.pushViewController(vc, animated: true)
     }
     
+    func toQuiz(type: QuizType) {
+        let vc = QuizViewController()
+         vc.coordinator = self
+        vc.questions = type.QuizPack
+         navigationController.pushViewController(vc, animated: true)
+    }
+    
     func toSettings() {
         let vc = SettingsViewController()
          vc.coordinator = self
@@ -66,6 +73,26 @@ class AppCoordinator: CoordinatorProtocol {
     func toBack() {
         self.navigationController.popViewController(animated: true)
     }
+}
+
+enum QuizType {
+    case combinations, exam
+    var QuizPack: [Quiz] {
+        switch self {
+        case .combinations:
+         return   [Quiz(imageName: "1", answers: ["Pair", "Street", "Color"], rightAnswer: "Pair"),
+             Quiz(imageName: "2", answers: ["Two pairs", "Pair", "Street"], rightAnswer: "Pair"),
+             Quiz(imageName: "3", answers: ["Two pairs", "Three cards", "Pair"], rightAnswer: "Pair"),
+             Quiz(imageName: "4", answers: ["Color", "Pair", "Two pairs"], rightAnswer: "Two pairs"),
+             Quiz(imageName: "5", answers: ["Color", "Pair", "Two pairs"], rightAnswer: "Two pairs")]
+        case .exam:
+         return   [Quiz(imageName: "6", answers: ["Pair", "Street", "Color"], rightAnswer: "Street"),
+             Quiz(imageName: "7", answers: ["Two pairs", "Pair", "Three cards"], rightAnswer: "Three cards"),
+             Quiz(imageName: "8", answers: ["Two pairs", "Three cards", "Full house"], rightAnswer: "Full house"),
+             Quiz(imageName: "9", answers: ["Full house", "Pair", "Two pairs"], rightAnswer: "Full house"),
+             Quiz(imageName: "10", answers: ["Color", "Pair", "Street"], rightAnswer: "Street")]
+        }
+}
 }
 
 enum Topic: String {

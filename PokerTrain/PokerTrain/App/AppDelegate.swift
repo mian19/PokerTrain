@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case false:
        
             let navController = UINavigationController()
+            navController.navigationBar.isHidden = true
             coordinator = AppCoordinator(navigationController: navController)
             coordinator?.start()
             window?.rootViewController = navController
