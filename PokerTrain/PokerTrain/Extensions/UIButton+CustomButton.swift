@@ -48,17 +48,23 @@ extension UIButton {
         button.layer.shadowOpacity = 0.5
         button.layer.masksToBounds = false
         button.layer.shadowPath = UIBezierPath(roundedRect: button.bounds, cornerRadius: button.layer.cornerRadius).cgPath
-        button.setImage(UIImage(named: imageName), for: .normal)
-        button.setTitle(title, for: .normal)
-       
-        button.titleLabel?.font = UIFont(name: "Raleway-SemiBold", size: 17)
+        let ico = UIImageView(image: UIImage(named: imageName))
+        button.addSubview(ico)
+        ico.frame = CGRect(x: 12, y: 12, width: 32, height: 32)
+        let titleL = UILabel()
+        titleL.text = title
+        titleL.textColor = UIColor.init(rgb: 0xffffff, a: 1)
+        button.addSubview(titleL)
+        titleL.frame = CGRect(x: 56, y: 17, width: 180, height: 20)
+        titleL.font = UIFont(name: "Raleway-SemiBold", size: 17)
         let bgImage = UIImageView(image: UIImage(named: "bigButton")!.resizeImageTo(size: CGSize(width: 336, height: 56)))
-        button.titleLabel?.adjustsFontSizeToFitWidth = true
+        titleL.adjustsFontSizeToFitWidth = true
         bgImage.frame = button.frame
         bgImage.contentMode = .scaleToFill
         button.insertSubview(bgImage, belowSubview: button.imageView!)
-        button.titleEdgeInsets = UIEdgeInsets(top: 12, left: -100, bottom: 12, right: 0)
-        button.imageEdgeInsets = UIEdgeInsets(top: 12, left: -130, bottom: 12, right: 0)
+        titleL.textAlignment = .left
+        
+      
         return button
     }
 }

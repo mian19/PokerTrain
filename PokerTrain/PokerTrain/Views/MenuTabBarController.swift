@@ -31,7 +31,7 @@ class MenuTabBarController: UITabBarController {
              self.tabBar.standardAppearance = tabBarAppearance
             
         } else {
-            self.tabBar.barTintColor =  UIColor.init(rgb: 0x1b1932, a: 0.5)
+            self.tabBar.barTintColor =  UIColor.init(rgb: 0x191335, a: 1)
         }
         let appearance = UITabBarItem.appearance()
         let attributes = [NSAttributedString.Key.font:UIFont(name: "Raleway-Bold", size: 10)]
@@ -39,7 +39,7 @@ class MenuTabBarController: UITabBarController {
         viewControllers = [nav, nav1, nav2, nav3]
         let bgView = UIImageView(image: UIImage(named: "TabBar"))
         bgView.frame = CGRect(x: 0, y: 0, width: tabBar.bounds.width, height: tabBar.bounds.height + 10)
-        bgView.backgroundColor = UIColor.mainBackground
+        bgView.backgroundColor = UIColor.init(rgb: 0x1c182f, a: 1)
         self.tabBar.addSubview(bgView)
         self.tabBar.sendSubviewToBack(bgView)
         ChangeRadiusOfTabbar()

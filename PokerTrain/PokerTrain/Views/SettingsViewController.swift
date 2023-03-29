@@ -23,6 +23,9 @@ class SettingsViewController: UIViewController {
         return label
     }()
     var privacyButton = UIButton.settingsButton(imageName: "Icon Privacy policy", title: "Privacy policy")
+    var termsButton = UIButton.settingsButton(imageName: "Icon terms of use", title: "Terms of use")
+    var supportButton = UIButton.settingsButton(imageName: "Icon support", title: "Support")
+    var contactButton = UIButton.settingsButton(imageName: "Icon mail", title: "Contact the developer")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +39,9 @@ class SettingsViewController: UIViewController {
         
         view.addSubview(titleLabel)
         view.addSubview(privacyButton)
+        view.addSubview(termsButton)
+        view.addSubview(supportButton)
+        view.addSubview(contactButton)
         
         titleLabel.snp.makeConstraints { make in
             make.width.equalTo(125)
@@ -50,11 +56,33 @@ class SettingsViewController: UIViewController {
             make.height.equalTo(56)
             make.top.equalTo(titleLabel.snp.bottom).offset(41)
         }
+        
+        termsButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.width.equalTo(336)
+            make.height.equalTo(56)
+            make.top.equalTo(privacyButton.snp.bottom).offset(16)
+        }
+        supportButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.width.equalTo(336)
+            make.height.equalTo(56)
+            make.top.equalTo(termsButton.snp.bottom).offset(16)
+        }
+        contactButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.width.equalTo(336)
+            make.height.equalTo(56)
+            make.top.equalTo(supportButton.snp.bottom).offset(16)
+        }
 
     }
     
     private func setActions() {
         privacyButton.addTarget(self, action: #selector(onPrivacyButton), for: .touchUpInside)
+     termsButton.addTarget(self, action: #selector(onTermsButton), for: .touchUpInside)
+        supportButton.addTarget(self, action: #selector(onSupportButton), for: .touchUpInside)
+        contactButton.addTarget(self, action: #selector(onContactButton), for: .touchUpInside)
     }
     
     private func showWebView(urlString: String) {
@@ -68,6 +96,18 @@ class SettingsViewController: UIViewController {
     }
     
     @objc func onPrivacyButton() {
+        showWebView(urlString: "https://onliner.by")
+    }
+    
+    @objc func onTermsButton() {
+        showWebView(urlString: "https://onliner.by")
+    }
+    
+    @objc func onSupportButton() {
+        showWebView(urlString: "https://onliner.by")
+    }
+    
+    @objc func onContactButton() {
         showWebView(urlString: "https://onliner.by")
     }
     
