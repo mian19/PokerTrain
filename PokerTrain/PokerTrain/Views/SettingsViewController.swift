@@ -29,7 +29,6 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
         view.backgroundColor = UIColor.mainBackground
         setViews()
         setActions()
