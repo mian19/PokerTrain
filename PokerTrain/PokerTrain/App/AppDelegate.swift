@@ -57,6 +57,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                 print(error?.localizedDescription)
             } else {
                 if status != .error {
+                   
+                    UserDefaultsManager.shared.saveURL(strURL: (remoteConfig["app_contact_the_developer_url"].stringValue ?? ""), key: "app_contact_the_developer_url")
+                    UserDefaultsManager.shared.saveURL(strURL: remoteConfig["app_privacy_policy_url"].stringValue ?? "", key: "app_privacy_policy_url")
+                    UserDefaultsManager.shared.saveURL(strURL: remoteConfig["app_support_url"].stringValue ?? "", key: "app_support_url")
+                    UserDefaultsManager.shared.saveURL(strURL: remoteConfig["app_terms_of_use_url"].stringValue ?? "", key: "app_terms_of_use_url")
+                    
                     if let whatToStart = remoteConfig["app_keitaro_url"].stringValue {
                         if let url = URL(string: whatToStart) {
                             let networkManager = NetworkManager()
@@ -83,7 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                                             let vc = WebViewController()
                                             self.window?.rootViewController = vc
                                             self.window?.makeKeyAndVisible()
-                                           
+                                            vc.isShowNav = true
                                             vc.urlString = whatToStart
                                             vc.start()
                                         }

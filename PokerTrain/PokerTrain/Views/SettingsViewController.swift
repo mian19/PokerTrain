@@ -94,19 +94,19 @@ class SettingsViewController: UIViewController {
     }
     
     @objc func onPrivacyButton() {
-        showWebView(urlString: "https://onliner.by")
+        showWebView(urlString: UserDefaultsManager.shared.getURL(key: "app_privacy_policy_url"))
     }
     
     @objc func onTermsButton() {
-        showWebView(urlString: "https://onliner.by")
+        showWebView(urlString: UserDefaultsManager.shared.getURL(key: "app_terms_of_use_url"))
     }
     
     @objc func onSupportButton() {
-        showWebView(urlString: "https://onliner.by")
+        showWebView(urlString: UserDefaultsManager.shared.getURL(key: "app_support_url"))
     }
     
     @objc func onContactButton() {
-        showWebView(urlString: "https://onliner.by")
+        showWebView(urlString: UserDefaultsManager.shared.getURL(key: "app_contact_the_developer_url"))
     }
     
 }

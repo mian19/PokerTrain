@@ -16,6 +16,25 @@ class UserDefaultsManager {
     
     private init() {}
     
+    func saveURL(strURL: String, key: String) {
+        let defaults = UserDefaults.standard
+
+        // Save a URL to UserDefaults
+        if let  url = URL(string: strURL) {
+            defaults.set(strURL, forKey: key)
+        } else {
+            defaults.set("https://google.com", forKey: key)
+        }
+
+      
+        
+    }
+    
+    func getURL(key: String) -> String {
+        // Read the URL from UserDefaults
+        return  UserDefaults.standard.string(forKey: key)!
+    }
+    
     func saveCheck(_ checkType: CheckType) {
         UserDefaults.standard.set(true, forKey: checkType.rawValue)
     }
