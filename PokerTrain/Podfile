@@ -7,4 +7,9 @@ target 'PokerTrain' do
 
   # Pods for PokerTrain
   pod 'SnapKit'
+ pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Messaging'
+pod 'Firebase/RemoteConfig'
+pod 'YandexMobileMetrica'
 end

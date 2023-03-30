@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  webtest
 //
-//  Created by Kyzu on 28.03.23.
 //
 
 import UIKit
@@ -19,7 +18,10 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        
+        if !UserDefaultsManager.shared.checkResult(.firstEntrance) {
+            showRateView()
+            UserDefaultsManager.shared.saveCheck(.firstEntrance)
+        }
         let credential = URLCredentialStorage.shared.defaultCredential(for: protectionSpace)
 
               let userContentController = WKUserContentController()

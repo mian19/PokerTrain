@@ -2,7 +2,6 @@
 //  ReaderViewController.swift
 //  PokerTrain
 //
-//  Created by Kyzu on 28.03.23.
 //
 
 import UIKit

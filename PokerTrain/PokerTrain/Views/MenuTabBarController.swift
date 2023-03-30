@@ -2,7 +2,6 @@
 //  MenuTabBarController.swift
 //  BirthdayReminder
 //
-//  Created by foxtree on 11.03.23.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  TimerViewController.swift
 //  PokerTrain
 //
-//  Created by Kyzu on 26.03.23.
 //
 
 import UIKit
@@ -160,10 +159,10 @@ class TimerViewController: UIViewController {
         playButton.setImage(UIImage(named: "playpause"), for: .normal)
         timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] timer in
             if self?.elapsedTime == 1 {
-                if self!.currentRound < 9  {
+                if self!.currentRound < 99  {
                     self?.currentRound += 1
-                    self?.currentBlaind += 1
                 }
+                self?.currentBlaind += 1
                 self!.elapsedTime = 6
                 DispatchQueue.main.async {
                     self?.roundButton.setTitle("Раунд \(self?.currentRound ?? 1)", for: .normal)

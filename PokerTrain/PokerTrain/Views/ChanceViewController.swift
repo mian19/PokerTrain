@@ -2,7 +2,6 @@
 //  ChanceViewController.swift
 //  PokerTrain
 //
-//  Created by Kyzu on 26.03.23.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  Double+adjustSize.swift
 //  ImageSearcher
 //
-//  Created by Kyzu on 30.11.22.
 //
 import UIKit
 

@@ -2,7 +2,6 @@
 //  UIButton+CustomButton.swift
 //  SportImages
 //
-//  Created by Kyzu on 22.10.22.
 //
 
 import UIKit

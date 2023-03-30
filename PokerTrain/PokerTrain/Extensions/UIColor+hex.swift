@@ -2,7 +2,6 @@
 //  UIColor+hex.swift
 //  Team Click
 //
-//  Created by Kyzu on 21.07.22.
 //
 
 import Foundation

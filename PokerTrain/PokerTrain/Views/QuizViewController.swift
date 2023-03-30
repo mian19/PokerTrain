@@ -2,7 +2,6 @@
 //  QuizViewController.swift
 //  PokerTrain
 //
-//  Created by Kyzu on 29.03.23.
 //
 
 import UIKit

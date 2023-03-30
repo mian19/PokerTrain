@@ -2,7 +2,6 @@
 //  UserDefaultsManager.swift
 //  TraidingSimulator
 //
-//  Created by Kyzu on 11.02.23.
 //
 
 import Foundation
