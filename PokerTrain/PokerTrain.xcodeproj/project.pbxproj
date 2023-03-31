@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09C5425129D6156100D0A939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C5425029D6156100D0A939 /* GoogleService-Info.plist */; };
 		09C5425329D665E700D0A939 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5425229D665E700D0A939 /* CardsViewController.swift */; };
+		09C5425529D76E7A00D0A939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C5425429D76E7900D0A939 /* GoogleService-Info.plist */; };
 		2E941807B8D02C752FE466D8 /* Pods_PokerTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7560330E8E0DB3B7A8ECEDA3 /* Pods_PokerTrain.framework */; };
 		6749EC0329D38B6A00D2E571 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6749EC0229D38B6A00D2E571 /* ReaderViewController.swift */; };
 		6749EC0529D3AC2500D2E571 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6749EC0429D3AC2500D2E571 /* WebViewController.swift */; };
@@ -40,8 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09C5425029D6156100D0A939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09C5425229D665E700D0A939 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		09C5425429D76E7900D0A939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6749EC0229D38B6A00D2E571 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
 		6749EC0429D3AC2500D2E571 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6777899029D095E1009E7F23 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				67E8942A29CED5D30075F9EC /* Assets.xcassets */,
 				67E8942C29CED5D30075F9EC /* LaunchScreen.storyboard */,
 				67E8942F29CED5D30075F9EC /* Info.plist */,
-				09C5425029D6156100D0A939 /* GoogleService-Info.plist */,
+				09C5425429D76E7900D0A939 /* GoogleService-Info.plist */,
 			);
 			path = PokerTrain;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				677B118E29D0E1FE00BBFE28 /* Raleway-Medium.ttf in Resources */,
 				67E8942B29CED5D30075F9EC /* Assets.xcassets in Resources */,
 				67E8945B29CF8EDF0075F9EC /* Raleway-Regular.ttf in Resources */,
-				09C5425129D6156100D0A939 /* GoogleService-Info.plist in Resources */,
+				09C5425529D76E7A00D0A939 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +517,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Kyzu.PokerTrain1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poker.dom.game.play;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -546,7 +546,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Kyzu.PokerTrain1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poker.dom.game.play;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

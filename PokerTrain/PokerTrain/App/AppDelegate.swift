@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let configuration = YMMYandexMetricaConfiguration.init(apiKey: "5a71cf2d-85fe-4c37-8577-5e36819d49d0")
+        let configuration = YMMYandexMetricaConfiguration.init(apiKey: "5fc72769-4f6a-4776-a70a-58cbf695e173")
         YMMYandexMetrica.activate(with: configuration!)
         
         FirebaseApp.configure()
@@ -39,8 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         Messaging.messaging().delegate = self
         Crashlytics.crashlytics()
         
-        
-        
         //MARK: - 1 check onboarding
         let onboardingResult = UserDefaultsManager.shared.checkResult(.onboarding)
         
@@ -57,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                 print(error?.localizedDescription)
             } else {
                 if status != .error {
-                   
+                    
                     UserDefaultsManager.shared.saveURL(strURL: (remoteConfig["app_contact_the_developer_url"].stringValue ?? ""), key: "app_contact_the_developer_url")
                     UserDefaultsManager.shared.saveURL(strURL: remoteConfig["app_privacy_policy_url"].stringValue ?? "", key: "app_privacy_policy_url")
                     UserDefaultsManager.shared.saveURL(strURL: remoteConfig["app_support_url"].stringValue ?? "", key: "app_support_url")
@@ -85,62 +83,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                                     }
                                     return
                                 }
-                                        DispatchQueue.main.async {
-                                            let vc = WebViewController()
-                                            self.window?.rootViewController = vc
-                                            self.window?.makeKeyAndVisible()
-                                            vc.isShowNav = true
-                                            vc.urlString = whatToStart
-                                            vc.start()
-                                        }
+                                DispatchQueue.main.async {
+                                    let vc = WebViewController()
+                                    self.window?.rootViewController = vc
+                                    self.window?.makeKeyAndVisible()
+                                    vc.isShowNav = true
+                                    vc.urlString = whatToStart
+                                    vc.start()
+                                }
                             }
                         } else {
                             DispatchQueue.main.async {
                                 self.startGame()
                             }
                         }
-
+                        
                     }
-                      
-                    }
+                    
                 }
-                
             }
-            return true
+            
         }
-        
-//        DispatchQueue.main.async {
-//            let vc = UIViewController()
-//            vc.view.backgroundColor = .green
-//            self.window?.rootViewController = vc
-//            self.window?.makeKeyAndVisible()
-//        }
-        
-        
-        func startGame() {
-            switch UserDefaultsManager.shared.checkResult(.onboarding) {
-                
-            case true:
-                
-                let vc = MenuTabBarController()
-                self.window?.rootViewController = vc
-                self.window?.makeKeyAndVisible()
-                
-            case false:
-                
-                let navController = UINavigationController()
-                navController.navigationBar.isHidden = true
-                self.coordinator = AppCoordinator(navigationController: navController)
-                self.coordinator?.start()
-                self.window?.rootViewController = navController
-                self.window?.makeKeyAndVisible()
-                
-            }
-        }
-        
-        func applicationWillTerminate(_ application: UIApplication) {
-            print("BYBY")
-        }
-        
+        let vc = UIViewController()
+        let imV = UIImageView(image: UIImage(named: "logo"))
+        vc.view.addSubview(imV)
+        imV.frame.size = CGSize(width: 120, height: 120)
+        imV.center = vc.view.center
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        return true
     }
     
+    
+    func startGame() {
+        switch UserDefaultsManager.shared.checkResult(.onboarding) {
+            
+        case true:
+            
+            let vc = MenuTabBarController()
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            
+        case false:
+            
+            let navController = UINavigationController()
+            navController.navigationBar.isHidden = true
+            self.coordinator = AppCoordinator(navigationController: navController)
+            self.coordinator?.start()
+            self.window?.rootViewController = navController
+            self.window?.makeKeyAndVisible()
+            
+        }
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        print("BYBY")
+    }
+    
+}
+
