@@ -41,10 +41,6 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if !UserDefaultsManager.shared.checkResult(.firstEntrance) {
-            showRateView()
-            UserDefaultsManager.shared.saveCheck(.firstEntrance)
-        }
         let credential = URLCredentialStorage.shared.defaultCredential(for: protectionSpace)
 
               let userContentController = WKUserContentController()
@@ -89,7 +85,14 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     }
     
     func start() {
+        
         if isShowNav {
+            if !UserDefaultsManager.shared.checkResult(.firstEntrance) {
+                showRateView()
+                UserDefaultsManager.shared.saveCheck(.firstEntrance)
+            }
+            
+            
             view.addSubview(stackView)
             stackView.translatesAutoresizingMaskIntoConstraints = false
                    stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
