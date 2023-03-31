@@ -132,7 +132,7 @@ class TimerViewController: UIViewController {
         }
         
         blindLabel.snp.makeConstraints { make in
-            make.width.equalTo(71)
+            make.width.equalTo(100)
             make.height.equalTo(24)
             make.centerX.equalToSuperview()
             make.top.equalTo(resetButton.snp.bottom).offset(VerticalConstants.verticalSpacing)

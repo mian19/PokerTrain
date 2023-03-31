@@ -48,6 +48,16 @@ class AppCoordinator: CoordinatorProtocol {
          navigationController.pushViewController(vc, animated: true)
     }
     
+    func toCards(selected: Int) -> CardsViewController {
+        let vc = CardsViewController()
+         vc.coordinator = self
+        vc.usedCard = selected
+        
+         navigationController.pushViewController(vc, animated: true)
+        vc.setViews()
+        return vc
+    }
+    
     func toReader(topic: Topic) {
         let vc = ReaderViewController()
          vc.coordinator = self

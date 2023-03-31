@@ -95,7 +95,7 @@ class QuizViewController: UIViewController {
     }
     
     func start() {
-        imageView.image = UIImage(named: questions[currentQuiz].imageName)
+        imageView.image = UIImage(named: "\(questions[currentQuiz].imageName)q")
         for i in 0...questions[currentQuiz].answers.count - 1 {
             if let button = answersStackView.subviews[i] as? UIButton {
                 button.setTitle(questions[currentQuiz].answers[i], for: .normal)
